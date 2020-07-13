@@ -6,6 +6,9 @@
   * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
   *
 */
+h1 {
+	text-align: center;
+}
 
 body {
   background-color: #1D2021;
