@@ -12,3 +12,25 @@ body {
   color: #C278E1;
 }
 
+h1 {
+  margin-left: 20px;
+}
+
+p {
+  font-size:24px;
+}
+
+.welcome, .quiz-interface, .answer-response {
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid darkgoldenrod;
+  display: flex;
+  flex-direction: column;
+}
+
+ol li {
+  margin: 8px;
+  font-size: 24px;
+}
+
+input[type='radio'] {transform: scale(1.4)}
