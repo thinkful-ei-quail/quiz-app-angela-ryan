@@ -43,3 +43,9 @@ input[type='radio'] {transform: scale(1.4)}
 .quiz-results {
 	text-align: center;
 }
+
+.submit-answer, #beginQuiz, .restart-quiz {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}

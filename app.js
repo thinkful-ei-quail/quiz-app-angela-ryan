@@ -238,12 +238,20 @@ function generateQuizResultsString(){
     <div class='quiz-results'>
       <p>
        The Quiz is over.
-      </p>
-      <p>You scored ${store.score} out of ${store.questions.length * 10}</p>
-      <button class="restart-quiz">Restart Quiz</button>
-    </div>
-    `;
-}
+         </p>
+          <p>You scored ${store.score} out of ${store.questions.length * 10}</p>            
+        <button class="restart-quiz">Restart Quiz</button>      
+    </div>   
+   ${generateImage()}  
+`;
+        }
+
+function generateImage(quizResults) {
+   return
+   console.log("I'm popping up after the quiz")
+      $('main').empty().append('<img src="https://images.unsplash.com/photo-1455577380025-4321f1e1dca7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" height="64px" width="64px" alt="River Image">')
+
+ }
 
 /********** RENDER FUNCTION(S) **********/
 
@@ -252,7 +260,8 @@ function renderQuiz () {
   if(store.quizStarted === false) {
     if(store.questionNumber === store.questions.length){
       const quizResultsString = generateQuizResultsString();
-      $('main').html(quizResultsString);
+      const finalImage = generateImage();
+      $('main').html(quizResultsString); 
     } else {
       const quizWelcomeInterfaceString = generateWelcomeString();
       $('main').html(quizWelcomeInterfaceString);
