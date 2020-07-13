@@ -23,7 +23,7 @@ p {
   font-size:24px;
 }
 
-.welcome, .quiz-interface, .answer-response {
+.welcome, .quiz-interface, .answer-response, .quiz-results {
   margin: 20px;
   padding: 10px;
   border: 2px solid darkgoldenrod;
